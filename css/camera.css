@@ -1,0 +1,13 @@
+.camera_frame {
+  width: 90%;
+  height: 40%;
+  position: relative;
+  margin: 0 auto 1em;
+}
+
+.camera_button {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+}
+
