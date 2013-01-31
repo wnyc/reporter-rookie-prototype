@@ -5,8 +5,12 @@
     , '*path': 'home'
     },
     show: function(selector) {
-      $('section.active').removeClass('active');
-      $('section' + selector).addClass('active');
+      var $shown
+        , $hidden;
+      ($hidden = $('section.active')).removeClass('active');
+      ($shown = $('section' + selector)).addClass('active');
+      $shown.trigger('activated');
+      $hidden.trigger('deactivated');
     },
     screen: function(screenID) {
       this.show('#' + screenID);
