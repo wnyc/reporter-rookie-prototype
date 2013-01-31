@@ -15,6 +15,7 @@ html, body, section {
 
 section {
 		display: none;
+		overflow: scroll;
 }
 
 .active {
@@ -67,36 +68,92 @@ ul li {
 		background: #2ea792;
 }
 
+.slide {
+		background: none;
+}
+
+.slide:hover {
+		background: none;
+}
+
 .button {
 		width: 90%;
 }
 
+/* browse */
+
 ul.browse li {
 		float: left;
 		width: 100%;
+		margin: 20px 0;
 }
 
-ul.browse li ul {
-		padding: 10px 20px;
-		height: 35px;
-		padding: 2% 5%;
+/*ul.browse li ul {
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}*/
+
+ul.browse li.list-image {
+		height: 200px;
+		overflow: hidden;
+		margin: 0;
 }
 
-ul.browse li.list-number {
-		width: 10%;
+ul.browse li img {
+		width: 100%;
+		margin: 0;
 }
 
 ul.browse li.list-text {
-		width: 80%;
-		height: 100%;
+		background: #fff;
+		height: 50px;
+		left: 0;
+		color: #000;
 		overflow: hidden;
-		white-space: nowrap;
 		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 90%;
+		margin: 0;
 }
 
-ul.browse li.raquo {
+
+
+/*assignment screen*/
+
+ul.assignments li {
+		float: left;
+		width: 100%;
+		margin: 20px 0;
+		display: inline;
+}
+
+ul.assignments li.list-number {
+		width: 10%;
+}
+
+ul.assignments li.list-text {
+		height: 50px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 90%;
+		margin: 0;
+}
+
+
+ul.assignments li.raquo {
   width: 10%;
 		text-align: center;
+		height: 50px;
+		margin: 0;
+}
+
+ul.assignments .hello {
+		
+
+}
+
+ul.assignments .slide:hover {
+
 }
 
 label {
