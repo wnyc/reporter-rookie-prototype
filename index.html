@@ -9,7 +9,10 @@
 <body>
 
   <section id="login">
-    <h1>Login Screen</h1>
+    <h1>Login</h1>
+    <p>
+      Use your NYPR, Facebook or Twitter login.
+    </p>
     <p>
       <label for="login_email">Email</label>
       <input type="text" id="login_email">
@@ -27,10 +30,11 @@
     <h3>Gun Assignment</h3>
     <p>Where has a shooting happened in your neighbourhood?</p>
     <ol>
-      <li>Take a picture</li>
-      <li>Add a quote</li>
+      <li>Find a site in your area where a shooting has taken place
+      <li>Take a picture
+      <li>Write a caption to give the photo context
     </ol>
-    <button class="next button">Start the assignment!</button>
+    <button class="next button">Start the action!</button>
   </section>
 
   <section id="level1_tutorial">
@@ -45,7 +49,22 @@
     <div class="camera_frame">
       <div class="camera_button"></div>
     </div>
-    <button class="next">Submit the story!</button>
+    <button class="next button">Got the photo!</button>
+  </section>
+
+  <section id="level1_metadata">
+    <h1>Level 1</h1>
+    <h2>Add some info...</h2>
+    <p>
+      <label for="level1_metadata_title">Title</label><input id="level1_metadata_title" type="text">
+    </p>
+    <p>
+      <label for="level1_metadata_title">Description</label><input id="level1_metadata_description" type="text">
+    </p>
+    <p>
+      <label for="level1_metadata_title">Tags</label><input id="level1_metadata_tags" type="text">
+    </p>
+    <button class="next button">Submit your Action</button>
   </section>
 
   <section id="level1_congrats">
@@ -57,7 +76,7 @@
   <section id="level2_intro">
     <h1>Level 2</h1>
     <h2>Intro</h2>
-    <button class="next button">Start the assignment!</button>
+    <button class="next button">Start the action!</button>
   </section>
 
   <section id="level2_tutorial">
@@ -107,7 +126,7 @@
   </section>
 
   <section id="assignment_detail">
-    <h1>Assignment Detail</h1>
+    <h1>Action Detail</h1>
     <h2>...</h2>
     <ul>
       <li class="next slide">Submission 1</li>
@@ -117,7 +136,7 @@
   </section>
 
   <section id="assignment_submission">
-    <h1>A Submission</h1>
+    <h1>Action Submission</h1>
     <h2>...</h2>
     <a class="next button">View User Profile</a>
   </section>
@@ -131,7 +150,13 @@
   <script src="js/underscore.min.js"></script>
   <script src="js/backbone.min.js"></script>
   <script src="js/router.js"></script>
+  <script src="js/camera.js"></script>
+
   <script src="js/main.js"></script>
+
+  <script>
+    Backbone.history.start();
+  </script>
 </body>
 </html>
 
