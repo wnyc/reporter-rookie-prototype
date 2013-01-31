@@ -14,6 +14,7 @@
       // activate the camera
       navigator.webkitGetUserMedia({video: true}, function(localMediaStream) {
         $video.attr('src', window.URL.createObjectURL(stream = localMediaStream));
+        if ($section.get(0) !== $('.active').get(0)) stream.stop();
       }, err);
     });
     $section.on('deactivated', function() {

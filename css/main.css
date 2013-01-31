@@ -61,3 +61,9 @@ ol {
   text-decoration: none;
 		background: #2ea792;
 }
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
