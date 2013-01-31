@@ -93,6 +93,10 @@ ul.browse li.list-number {
 
 ul.browse li.list-text {
 		width: 80%;
+		height: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 }
 
 ul.browse li.raquo {
