@@ -40,7 +40,7 @@ ol {
 		padding: 0 10%;
 }
 
-.next {
+.button {
   display: block;
   width: 90%;
   background: #0ad5b1;
@@ -55,7 +55,9 @@ ol {
      -moz-border-radius: 0.2em;
 }
 
-.next:hover {
+
+
+.button:hover {
   text-decoration: none;
 		background: #2ea792;
 }
