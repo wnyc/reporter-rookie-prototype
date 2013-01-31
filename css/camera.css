@@ -5,14 +5,42 @@
   margin: 0 auto 1em;
 }
 
+.camera_buffer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: none;
+}
+
 .camera_button {
   position: absolute;
   bottom: 10px;
-  margin: 0 auto;
+  background: white;
+  -webkit-border-radius: 1em;
+  width: 3em;
+  height: 2em;
+  left: 50%;
+  margin: 0 0 0 -1.5em;
+  cursor: pointer;
+  display: none;
 }
 
 .camera_frame video {
+  position: absolute;
   width: 100%;
   height: 100%;
+  left: 50%;
+}
+
+#level1_doit .cancel {
+  display: none;
+  margin-bottom: 1em;
+}
+
+#level1_doit .next {
+  display: none;
 }
 
