@@ -48,13 +48,16 @@
     <h2>Do it!</h2>
     <div class="camera_frame">
       <div class="camera_button"></div>
+      <canvas class="camera_buffer"></canvas>
     </div>
-    <button class="next button">Got the photo!</button>
+    <button class="next button">Use This Photo!</button>
+    <button class="cancel button">Take Another</button>
   </section>
 
   <section id="level1_metadata">
     <h1>Level 1</h1>
     <h2>Add some info...</h2>
+    <canvas id="metadata_photo" width="200" height="150"></canvas>
     <p>
       <label for="level1_metadata_title">Title</label><input id="level1_metadata_title" type="text">
     </p>

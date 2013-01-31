@@ -18,7 +18,7 @@ section {
 }
 
 .active {
-		display: block;
+		display: block !important;
 }
 
 h1 {
@@ -47,7 +47,7 @@ ul li {
 		padding: 0;
 }
 
-.next {
+.button {
   display: block;
   width: 90%;
   background: #0ad5b1;
@@ -55,25 +55,30 @@ ul li {
   cursor: pointer;
   margin: 0 auto;
   padding: 0.5em 0;
-		font-family: 'Roboto Condensed', sans-serif;
-		border: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: none;
   font-size: 1.5em;
   -webkit-border-radius: 0.2em;
      -moz-border-radius: 0.2em;
+  text-decoration: none;
+}
+
+.next {
+  background: #0ad5b1;
 }
 
 .next:hover {
   text-decoration: none;
-		background: #2ea792;
+  background: #2ea792;
 }
 
-.button {
-		width: 90%;
+.cancel {
+  background: #f00;
 }
 
 ul.browse li {
-		float: left;
-		width: 100%;
+  float: left;
+  width: 100%;
 }
 
 ul.browse li ul {
@@ -98,5 +103,11 @@ ul.browse li.raquo {
 label {
 		display: inline-block;
   width: 100px;
+}
+
+#metadata_photo {
+  position: relative;
+  margin: 0 0 0 -100px;
+  left: 50%;
 }
 
