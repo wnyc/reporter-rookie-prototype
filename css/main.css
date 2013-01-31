@@ -115,3 +115,15 @@ label {
   left: 50%;
 }
 
+#level2_tutorial video {
+  width: 266px;
+  height: 200px;
+  position: relative;
+  left: 50%;
+  margin: 0 0 0 -133px;
+}
+
+#level2_tutorial ul {
+  margin: 0 0 1em 5%;
+}
+

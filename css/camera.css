@@ -37,6 +37,7 @@
 
 #level1_doit .cancel {
   display: none;
+  margin-bottom: 1em;
 }
 
 #level1_doit .next {
