@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type=text/css>
+    html, body, section {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    section {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="login">
+    <h1>Login Screen</h1>
+    <p>
+      <label for="login_email">Email</label>
+      <input type="text" id="login_email">
+    </p>
+    <p>
+      <label for="login_password">Password</label>
+      <input type="password" id="login_password">
+    </p>
+    <button id="login_go">Login</button>
+  </section>
+
+  <section id="level1_intro">
+    <h1>Level 1</h1>
+    <h2>Guns</h2>
+    <h3>Assignment</h3>
+    <p>Where has a shooting happened in your neighbourhood?</p>
+    <ol>
+      <li>Take a picture</li>
+      <li>Add a quote</li>
+    </ol>
+  </section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/underscore.min.js"></script>
+  <script src="js/backbone.min.js"></script>
+  <script src="js/router.js"></script>
+
+  <script>
+    Backbone.history.start();
+    $('#login_go').click(function() { router.goTo('level1_intro'); });
+  </script>
+</body>
+</html>
+
