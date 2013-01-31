@@ -40,7 +40,14 @@ ol {
 		padding: 0 10%;
 }
 
-.button {
+ul,
+ul li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+}
+
+.next {
   display: block;
   width: 90%;
   background: #0ad5b1;
@@ -55,9 +62,36 @@ ol {
      -moz-border-radius: 0.2em;
 }
 
-
-
-.button:hover {
+.next:hover {
   text-decoration: none;
 		background: #2ea792;
 }
+
+.button {
+		width: 90%;
+}
+
+ul.browse li {
+		float: left;
+		width: 100%;
+}
+
+ul.browse li ul {
+		padding: 10px 20px;
+		height: 35px;
+		padding: 2% 5%;
+}
+
+ul.browse li.list-number {
+		width: 10%;
+}
+
+ul.browse li.list-text {
+		width: 80%;
+}
+
+ul.browse li.raquo {
+  width: 10%;
+		text-align: center;
+}
+
