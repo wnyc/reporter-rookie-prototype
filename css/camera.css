@@ -25,6 +25,7 @@
   left: 50%;
   margin: 0 0 0 -1.5em;
   cursor: pointer;
+  display: none;
 }
 
 .camera_frame video {
@@ -32,5 +33,13 @@
   width: 100%;
   height: 100%;
   left: 50%;
+}
+
+#level1_doit .cancel {
+  display: none;
+}
+
+#level1_doit .next {
+  display: none;
 }
 

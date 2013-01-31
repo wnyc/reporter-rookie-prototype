@@ -25,6 +25,8 @@
       bufferHeight = $video.height();
       bufferWidth = bufferHeight * (4/3);
 
+      $button.addClass('active');
+
       $video.width(bufferWidth + 'px');
       $video.height(bufferHeight + 'px');
       $video.css('margin-left', '-' + (bufferWidth/2) + 'px');
@@ -43,8 +45,9 @@
     });
 
     $section.on('deactivated', function() {
+      $button.removeClass('active');
       // deactivate the camera
-      if (stream && attemptingCapture) {
+      if (stream) {
         attemptingCapture = false;
         stream.stop();
       }
@@ -52,10 +55,16 @@
 
     $button.on('click', function() {
       $video.get(0).pause();
+      $cancel.addClass('active');
+      $ok.addClass('active');
+      $button.removeClass('active');
     });
 
     $cancel.on('click', function() {
       $video.get(0).play();
+      $ok.removeClass('active');
+      $cancel.removeClass('active');
+      $button.addClass('active');
     });
 
     $ok.on('click', function() {
