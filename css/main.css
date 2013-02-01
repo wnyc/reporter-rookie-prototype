@@ -244,6 +244,40 @@ label {
 }
 
 
+/* Full Page */
+
+#assignment_submission p img{
+		width: 100%;
+}
+
+#assignment_submission h2 {
+		color: #000;
+		font-size: 1.8em;
+}
+
+#assignment_submission p.user {
+		color: #999;
+		font-size: 0.8em;
+}
+
+#assignment_submission p.user .votes{
+		background: url('../images/heart.gif') 0 0 no-repeat;
+		width: 20px;
+		padding-left: 20px;
+		margin-left: 12px;
+		color: #ff3366;
+}
+
+#assignment_submission a.next {
+		color: #0ad5b1;
+		cursor: pointer;
+		background: none;
+}
+
+#assignment_submission a.next:hover {
+		text-decoration: underline;
+}
+
 /* tuts stuff */
 
 #metadata_photo {
