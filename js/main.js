@@ -1,6 +1,9 @@
 (function() {
   /*global router */
-  function goTo(place) { router.goTo(place); }
+  function goTo(place) {
+    router.goTo(place);
+    window.scrollTo(0);
+  }
   function current() {
     return $('section.active');
   }
