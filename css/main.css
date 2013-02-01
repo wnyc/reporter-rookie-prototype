@@ -32,11 +32,13 @@ h1 {
 		padding: 10px 5%;
 }
 
-#home {
+#home,
+#interstitial {
 		background: #222;
 }
 
-#home h1 {
+#home h1,
+#interstitial h1 {
 		text-align: center;
 		font-size: 5em;
 		background: #222;
@@ -45,10 +47,11 @@ h1 {
 		padding: 50px 0 0 0;
 		cursor: pointer;
 		box-shadow: none;
-                box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#home h1:hover{
+#home h1:hover,
+#interstitial h1:hover {
 		background: #252525;
 }
 
@@ -243,6 +246,42 @@ label {
   width: 100px;
 }
 
+
+/*assignment screen*/
+
+ul.assignments li {
+		width: 100%;
+		display: inline;
+		overflow: hidden;
+}
+
+ul.assignments li .button{
+		width: 100%;
+		font-size: 1em;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+		display: block;
+		float: left;
+		border-bottom: 1px solid #fff;
+}
+
+ul.assignments li.list-number {
+		width: 10%;
+		float: left;
+		text-align: center;
+}
+
+ul.assignments li.list-text {
+		width: 80%;
+		display: inline-block;
+		float: left;
+}
+
+ul.assignments li.raquo {
+  width: 10%;
+		text-align: center;
+		float: left;
+}
 
 /* tuts stuff */
 
