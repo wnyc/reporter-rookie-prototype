@@ -179,6 +179,52 @@ ul.assignments li.raquo {
 
 /* STUFF I HATE */
 
+ul.browse li {
+		display: block;
+		height: 100px;
+		margin-top: 10px;
+}
+
+ul.browse li ul.next {
+		padding: 0 5%;		
+}
+
+ul.browse li.list-image {
+		float: left;
+		max-width: 20%;
+		width: 75px;
+		height: 75px;
+		overflow: hidden;
+		background: #000;
+}
+
+ul.browse li.list-text {
+		float: left;
+		width: 75%;
+		margin-left: 5%;
+}
+
+ul.browse li.list-text p{
+		padding: 0;
+		margin: 0;
+}
+
+ul.browse li.list-text p.head{
+		font-size: 1.1em;
+		color: #000;
+		height: 55px;
+}
+
+ul.browse li.list-text p.user{
+		font-size: 0.8em;
+		color: #999;
+}
+
+
+ul.browse li.list-image img {
+		height: 75px;
+}
+
 /*ul.browse li {
 		float: left;
 		width: 100%;
