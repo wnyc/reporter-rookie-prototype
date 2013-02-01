@@ -35,11 +35,15 @@ h2 {
 }
 
 ul {
-		font-size: 28px;
+		font-size: 17px;
 		line-height: 36px;
-		list-style: square outside none;
+		list-style: none;
 		margin: 50px 0 0;
-		padding: 0 0 0 35px;
+		padding: 0 0 0 0;
+}
+
+ul li {
+		color: #999;
 }
 
 section {
@@ -58,6 +62,19 @@ section {
 		height: 700px;
 }
 
+.main {
+		color: #000;
+		display: block;
+		padding: 0;
+		margin: 0;
+		font-size: 26px;
+}
+
+.subtitle{
+		top: -10px;
+		position: relative;
+}
+
 </style>
 
 <body>
@@ -67,14 +84,24 @@ section {
 						<h1>Zing</h1>
 								<h2>PocketReporter</h2>
 								<ul>
-										<li>This is great</li>
-										<li>This is awesome</li>
-										<li>Woow this is so good</li>
+										<li>
+												<span class="main">Learn.</span>
+												<span class="subtitle">It's journalism-school in a box.</span>
+										</li>
+										<li>
+												<span class="main">Make.</span>
+												<span class="subtitle">It's a multi-media reporting tool.</span>
+										</li>
+										<li>
+												<span class="main">Play.</span>
+												<span class="subtitle">It's a multi-level game.</span>
+										</li> 
 								</ul>
 				</div>
 
 				<div id="app">
-						<iframe  frameborder="0" src="http://localhost:8000/" width="400" height="581">
+<!--						<iframe  frameborder="0" src="http://marineboudeau.com/lab/zing-wnyc" width="400" height="581">-->
+					<iframe  frameborder="0" src="http://localhost:8000" width="400" height="581">
 				</div>
 		</section>
 
