@@ -58,7 +58,7 @@
   clear: both;
   margin: 1em auto 0;
   display: none;
-  background: url(/images/waveform.png) 0 0 no-repeat;
+  background: url(../images/waveform.png) 0 0 no-repeat;
 }
 
 #play {
