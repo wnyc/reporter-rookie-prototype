@@ -226,7 +226,7 @@ label {
   left: 50%;
 }
 
-#level2_tutorial video {
+.tutorial video {
   width: 266px;
   height: 200px;
   position: relative;
@@ -234,7 +234,12 @@ label {
   margin: 0 0 0 -133px;
 }
 
-#level2_tutorial ul {
+.tutorial ul {
   margin: 0 0 1em 5%;
+}
+
+.tutorial ul li {
+  margin: 0 0 0 1em;
+  list-style: square;
 }
 

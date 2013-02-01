@@ -1,7 +1,5 @@
 (function() {
-  function err() {
-    console.error(arguments);
-  }
+
   $('.camera_frame').each(function(i, el) {
     var $camera = $(el);
     var $section = $camera.parents('section').first();
@@ -15,56 +13,36 @@
     var $ok = $section.find('.next');
     var $photo = $('#metadata_photo');
 
-    var stream;
     var bufferWidth;
     var bufferHeight;
-    var attemptingCapture = false;
+
+    var interval = setInterval(function() {
+      if (window.mediaStreamURL) {
+        $video.attr('src', window.mediaStreamURL);
+        clearInterval(interval);
+      }
+    }, 1000);
 
     $section.on('activated', function() {
-      if (attemptingCapture) return;
       bufferHeight = $video.height();
       bufferWidth = bufferHeight * (4/3);
-
-      $button.addClass('active');
-
       $video.width(bufferWidth + 'px');
       $video.height(bufferHeight + 'px');
       $video.css('margin-left', '-' + (bufferWidth/2) + 'px');
       $buffer.width(bufferWidth + 'px');
       $buffer.css('margin-left', '-' + (bufferWidth/2) + 'px');
-
-      attemptingCapture = true;
-      // activate the camera
-      navigator.webkitGetUserMedia({video: true}, function(localMediaStream) {
-        attemptingCapture = false;
-        $video.attr('src', window.URL.createObjectURL(stream = localMediaStream));
-        if ($section.get(0) !== $('.active').get(0)) {
-          stream.stop();
-        }
-      }, err);
     });
 
-    $section.on('deactivated', function() {
-      $button.removeClass('active');
-      // deactivate the camera
-      if (stream) {
-        attemptingCapture = false;
-        stream.stop();
-      }
-    });
-
-    $button.on('click', function() {
+    $video.on('click', function() {
       $video.get(0).pause();
       $cancel.addClass('active');
       $ok.addClass('active');
-      $button.removeClass('active');
     });
 
     $cancel.on('click', function() {
       $video.get(0).play();
       $ok.removeClass('active');
       $cancel.removeClass('active');
-      $button.addClass('active');
     });
 
     $ok.on('click', function() {

@@ -12,7 +12,7 @@
   <section id="home">
     <h1 class="next">Zing</h1>
   </section>
-  
+
   <section id="login">
     <h1>Zing</h1>
     <p>
@@ -28,7 +28,7 @@
     </p>-->
     <p>
       <input type="email" placeholder="E-Mail" id="email" />
-      <input type="password" placeholder="Password" id="password" />      
+      <input type="password" placeholder="Password" id="password" />
     </p>
     <button class="next button" id="login_go">Sign In</button>
   </section>
@@ -97,7 +97,7 @@
   </section>
 
   <section id="level1_intro">
-    <h1>Level 1</h1>
+    <h1>Action 2</h1>
     <h2>Guns in Your Neighborhood</h2>
     <p>Where has a shooting happened in your neighbourhood?</p>
     <ol>
@@ -108,17 +108,22 @@
     <button class="next button">Get Started</button>
   </section>
 
-  <section id="level1_tutorial">
-    <h1>Level 1</h1>
+  <section class="tutorial" id="level1_tutorial">
+    <h1>Action 2</h1>
     <h2>Tutorial</h2>
+    <ul>
+      <li>Think of a scene that represents your idea
+      <li>Shoot with the sun behind you
+      <li>Think of an interesting way to frame the object or scene
+      <li>Don’t be afraid to take multiple shots
+    </ul>
     <button class="next button">Now it's your turn...</button>
   </section>
 
   <section id="level1_doit">
-    <h1>Level 1</h1>
+    <h1>Action 2</h1>
     <h2>Do it!</h2>
     <div class="camera_frame">
-      <div class="camera_button"></div>
       <canvas class="camera_buffer"></canvas>
     </div>
     <button class="cancel button">Take Another</button>
@@ -126,7 +131,7 @@
   </section>
 
   <section id="level1_metadata">
-    <h1>Level 1</h1>
+    <h1>Action 2</h1>
     <h2>Add some info...</h2>
     <canvas id="metadata_photo" width="200" height="150"></canvas>
     <p>
@@ -142,19 +147,24 @@
   </section>
 
   <section id="level1_congrats">
-    <h1>Level 1</h1>
+    <h1>Action 2</h1>
     <h2>Congratulations!</h2>
-    <button class="next button">On to Level 2!</button>
+    <button class="next button">On to Action 3!</button>
   </section>
 
   <section id="level2_intro">
-    <h1>Level 2</h1>
+    <h1>Action 5</h1>
     <h2>Intro</h2>
+    <ol>
+      <li>Find someone who has been affected by a shooting (i.e. friend, neighbor, storekeeper)
+      <li>Think of what you want to learn from this person and come up with a few questions 
+      <li>Record an audio or video interview
+    </ol>
     <button class="next button">Start the action!</button>
   </section>
 
-  <section id="level2_tutorial">
-    <h1>Level 2</h1>
+  <section class="tutorial" id="level2_tutorial">
+    <h1>Action 5</h1>
     <h2>Tutorial</h2>
     <video width="266" height="200"></video>
     <ul>
@@ -167,13 +177,13 @@
   </section>
 
   <section id="level2_doit">
-    <h1>Level 2</h1>
+    <h1>Action 5</h1>
     <h2>Do it!</h2>
     <button class="next button">Submit the story!</button>
   </section>
 
   <section id="level2_congrats">
-    <h1>Level 2</h1>
+    <h1>Action 5</h1>
     <h2>Congratulations!</h2>
     <button class="next button">On to Level 3!</button>
   </section>
@@ -264,6 +274,7 @@
   <script src="js/underscore.min.js"></script>
   <script src="js/backbone.min.js"></script>
   <script src="js/router.js"></script>
+  <script src="js/capture.js"></script>
   <script src="js/camera.js"></script>
 
   <script src="js/main.js"></script>
