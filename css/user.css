@@ -10,6 +10,14 @@
   margin: 0;
 }
 
+#user_badges {
+  margin-top: 34px;
+  float: left;
+  background: white;
+  border-radius: 30px;
+  padding: 15px;
+}
+
 #user_profile_pic {
   float: left;
   margin: 0 5% 0 5%;
