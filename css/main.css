@@ -41,10 +41,11 @@ h1 {
 		font-size: 5em;
 		background: #222;
 		color: #fff;
-		height: 92%;
+		height: 100%;
 		padding: 50px 0 0 0;
 		cursor: pointer;
 		box-shadow: none;
+                box-sizing: border-box;
 }
 
 #home h1:hover{
@@ -279,7 +280,7 @@ label {
   width: 50px;
   height: 48px;
   background: url(/images/star.png) 0 0 no-repeat;
-  -webkit-transition: top 1s linear;
+  -webkit-transition: top 2s linear;
 }
 
 #level1_metadata .button.next {
