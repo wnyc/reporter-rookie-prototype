@@ -19,7 +19,7 @@
       this.navigate('screen/'+place, true);
     },
     home: function() {
-      this.goTo('login');
+      this.goTo('home');
     }
   });
 

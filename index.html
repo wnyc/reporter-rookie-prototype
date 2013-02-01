@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TBD</title>
+  <title>Zing :: PocketReporter :: ZaZaZiiiing</title>
   <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Junge|Averia+Libre|Roboto+Condensed' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/camera.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 
+
+  <section id="home">
+    <h1 class="next">Zing</h1>
+  </section>
+  
   <section id="login">
-    <h1>Login</h1>
+    <h1>Zing</h1>
     <p>
       Use your NYPR, Facebook or Twitter login.
     </p>
-    <p>
+<!--    <p>
       <label for="login_email">Email</label>
       <input type="text" id="login_email">
     </p>
     <p>
-      <label for="login_password">Password</label>
+     <label for="login_password">Password</label>
       <input type="password" id="login_password">
+    </p>-->
+    <p>
+      <input type="email" placeholder="E-Mail" id="email" />
+      <input type="password" placeholder="Password" id="password" />      
     </p>
-    <button class="next button" id="login_go">Login!</button>
+    <button class="next button" id="login_go">Sign In</button>
   </section>
 
   <section id="assignment_browse">
@@ -29,58 +38,58 @@
     <!--<h2>Browse assignments</h2>-->
     <ul class="assignments">
       <li>
-        <ul class="next hello">
+        <ul class="next button">
           <li class="list-number">#1</li>
-          <li class="list-text">Shooting in the L.E.S.</li>
+          <li class="list-text">Guns in Your Neighborhood</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
       <li>
-        <ul class="next hello">
+        <ul class="next button">
           <li class="list-number">#2</li>
-          <li class="list-text">My mother needs pot for her back pain</li>
+          <li class="list-text">Should Marijuana Be Legalized?</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
       <li>
-        <ul class="next">
+        <ul class="next button">
           <li class="list-number">#3</li>
-          <li class="list-text">The Barclays center sure brings some strange people to 5th Avenue</li>
+          <li class="list-text">Not in My Backyard: A Development Controversy</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
       <li>
-        <ul class="next slide">
-          <li class="list-number">#3</li>
-          <li class="list-text">My trip to the Rockaways</li>
-          <li class="raquo">&raquo</li>
-        </ul>
-      </li>
-      <li>
-        <ul class="next slide">
+        <ul class="next button">
           <li class="list-number">#4</li>
-          <li class="list-text">Bike lanes leave me no place to park on Prince St.</li>
+          <li class="list-text">Life After Hurricane Sandy</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
       <li>
-        <ul class="next slide">
+        <ul class="next button">
           <li class="list-number">#5</li>
-          <li class="list-text">“Lavagem Da Rua” - Brazil day 2013</li>
+          <li class="list-text">Bike Lanes - Do We Need Them?</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
       <li>
-        <ul class="next slide">
+        <ul class="next button">
           <li class="list-number">#6</li>
-          <li class="list-text">Why do people keep going to the tea lounge?</li>
+          <li class="list-text">Safety in Schools Post-Sandy Hook</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
       <li>
-        <ul class="next slide">
+        <ul class="next button">
           <li class="list-number">#7</li>
-          <li class="list-text">Nobody feels any safer with the cops in the school</li>
+          <li class="list-text">Immigrant Culture in Your Community</li>
+          <li class="raquo">&raquo</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="next button">
+          <li class="list-number">#8</li>
+          <li class="list-text">Better than Starbucks?  Your Local Coffee Haunts</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
@@ -90,14 +99,13 @@
   <section id="level1_intro">
     <h1>Level 1</h1>
     <h2>Guns in Your Neighborhood</h2>
-    <h3>Guns in Your Neighborhood</h3>
     <p>Where has a shooting happened in your neighbourhood?</p>
     <ol>
       <li>Find a site in your area where a shooting has taken place
       <li>Take a picture
       <li>Write a caption to give the photo context
     </ol>
-    <button class="next button">Start the action!</button>
+    <button class="next button">Get Started</button>
   </section>
 
   <section id="level1_tutorial">
@@ -114,7 +122,7 @@
       <canvas class="camera_buffer"></canvas>
     </div>
     <button class="cancel button">Take Another</button>
-    <button class="next button">Use This Photo!</button>
+    <button class="next button">Use This Photo</button>
   </section>
 
   <section id="level1_metadata">
@@ -150,9 +158,9 @@
     <h2>Tutorial</h2>
     <video width="266" height="200"></video>
     <ul>
-      <li>Hold the mic a fist‚Äôs length away from the subject
+      <li>Hold the mic a fist's length away from the subject
       <li>Record your own questions, too
-      <li>Don‚Äôt say ‚Äúuh-huh‚Äù while someone else is talking
+      <li>Don't say "uh-huh" while someone else is talking
       <li>Record some ambience for 10-15 seconds before and after the interview
     </ul>
     <button class="next button">Now it's your turn...</button>
@@ -197,7 +205,7 @@
         <ul class="next slide">
           <li class="list-image"><img src="stories/1.jpg" /></li>
           <li class="list-text">My trip to the Rockaways</li>
-          <li class="raquo">&raquo</li>
+          <li class="raquo">5 votes</li>
         </ul>
       </li>
       <li>
@@ -210,7 +218,7 @@
       <li>
         <ul class="next slide">
           <li class="list-image"><img src="stories/1.jpg" /></li>
-          <li class="list-text">“Lavagem Da Rua” - Brazil day 2013</li>
+          <li class="list-text">"Lavagem Da Rua" - Brazil day 2013</li>
           <li class="raquo">&raquo</li>
         </ul>
       </li>
