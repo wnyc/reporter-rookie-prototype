@@ -1,5 +1,5 @@
 #user_description {
-  height: 160px;
+  height: 142px;
   background: #ddd;
   padding: 38px 0 0 0;
 }
@@ -19,12 +19,12 @@
 }
 
 #user_description p {
-		margin-top: 12px;
+		margin: 3px 0 6px 0;
 }
 
 #user_profile_pic img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 		border: 1px solid #bbb;
 }
 
