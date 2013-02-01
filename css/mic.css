@@ -52,7 +52,7 @@
   -webkit-animation: rec 0.7s infinite;
 }
 
-#waveform {
+.waveform {
   width: 294px;
   height: 108px;
   clear: both;

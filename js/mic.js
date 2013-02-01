@@ -7,7 +7,7 @@
   }
   var $level = $('#microphone_level');
   var $rec = $('#microphone_record');
-  var $wave = $('#waveform');
+  var $wave = $('#level2_doit .waveform');
   var $play = $('#play');
   var $mp3 = $('#recording');
   var height = 100;
