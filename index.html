@@ -5,9 +5,9 @@
   <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Junge|Averia+Libre|Roboto+Condensed' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/camera.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/mic.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-
 
   <section id="home">
     <h1 class="next">Zing</h1>
@@ -18,14 +18,6 @@
     <p>
       Use your NYPR, Facebook or Twitter login.
     </p>
-<!--    <p>
-      <label for="login_email">Email</label>
-      <input type="text" id="login_email">
-    </p>
-    <p>
-     <label for="login_password">Password</label>
-      <input type="password" id="login_password">
-    </p>-->
     <p>
       <input type="email" placeholder="E-Mail" id="email" />
       <input type="password" placeholder="Password" id="password" />
@@ -99,7 +91,7 @@
   <section id="level1_intro">
     <h1>Action 2</h1>
     <h2>Guns in Your Neighborhood</h2>
-    <p>Where has a shooting happened in your neighbourhood?</p>
+    <p>Where has a shooting happened in your neighborhood?</p>
     <ol>
       <li>Find a site in your area where a shooting has taken place
       <li>Take a picture
@@ -179,7 +171,31 @@
   <section id="level2_doit">
     <h1>Action 5</h1>
     <h2>Do it!</h2>
+    <div id="mwrap">
+      <div id="microphone_wrapper">
+        <div id="microphone_level"></div>
+      </div>
+      <div id="microphone_record"></div>
+    </div>
+    <div id="waveform"></div>
+    <div id="play"></div>
+    <audio id="recording" src="audio/recording.mp3"></audio>
     <button class="next button">Submit the story!</button>
+  </section>
+
+  <section id="level2_metadata">
+    <h1>Action 2</h1>
+    <h2>Add some info...</h2>
+    <p>
+      <label for="level2_metadata_title">Title</label><input id="level2_metadata_title" type="text">
+    </p>
+    <p>
+      <label for="level2_metadata_title">Description</label><input id="level2_metadata_description" type="text">
+    </p>
+    <p>
+      <label for="level2_metadata_title">Tags</label><input id="level2_metadata_tags" type="text">
+    </p>
+    <button class="next button">Submit your Action</button>
   </section>
 
   <section id="level2_congrats">
@@ -276,6 +292,7 @@
   <script src="js/router.js"></script>
   <script src="js/capture.js"></script>
   <script src="js/camera.js"></script>
+  <script src="js/mic.js"></script>
 
   <script src="js/main.js"></script>
 
