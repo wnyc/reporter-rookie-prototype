@@ -16,7 +16,7 @@
         stars.forEach(function($s) {
           setTimeout(function() {
             $s.css({
-              top: '700px'
+              top: (650 + Math.floor((Math.random() * 500) + 200)) + 'px'
             });
           }, Math.floor(Math.random() * 200));
         });

@@ -302,3 +302,7 @@ label {
   -webkit-transition: top 1s linear;
 }
 
+#level1_metadata .button.next {
+  margin-bottom: 1em;
+}
+
