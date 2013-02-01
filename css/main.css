@@ -359,32 +359,7 @@ ul.assignments li.raquo {
   margin-bottom: 1em;
 }
 
-#user_description {
-  background: #ddd;
-  padding: 38px 0 0 0;
-}
 
-#user_description h4 {
-  font-size: 1.3em;
-  margin: 0;
-}
 
-#user_profile_pic {
-  float: left;
-  margin: 0 5% 0 5%;
-}
 
-#user_profile .user {
-		display: none;
-}
-
-#user_profile h1 {
-		display: none;
-}
-
-#user_profile_pic img {
-  width: 225px;
-  height: 225px;
-		border: 1px solid #bbb;
-}
 
