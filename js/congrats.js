@@ -32,7 +32,7 @@
           top: '-50px'
         , left: left + 'px'
         });
-        left = left + (Math.floor(Math.random() * 10) + 50);
+        left = left + (Math.floor(Math.random() * 50) + 50);
       });
     }
     resetStars();
