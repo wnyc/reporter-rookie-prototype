@@ -65,7 +65,7 @@
   display: none;
   width: 50px;
   height: 39px;
-  background: url(/images/play.png) 0 0 no-repeat;
+  background: url(../images/play.png) 0 0 no-repeat;
   position: relative;
   top: -79px;
   margin: 0 auto;
