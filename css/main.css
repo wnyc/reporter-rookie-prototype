@@ -128,6 +128,18 @@ ul li {
   background: #f00;
 }
 
+.cancel:hover {
+		background: #d90303;
+}
+
+
+/* congrats screens */
+
+section.congrats h2,
+section.congrats h3,
+section.congrats p {
+		text-align: center;
+}
 
 /*assignment screen*/
 
@@ -154,9 +166,6 @@ ul.assignments li.list-number {
 }
 
 ul.assignments li.list-text {
-/*		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;*/
 		width: 80%;
 		display: inline-block;
 		float: left;
@@ -169,16 +178,6 @@ ul.assignments li.raquo {
 }
 
 /* STUFF I HATE */
-
-/*.slide {
-		background: none;
-}
-
-.slide:hover {
-		background: none;
-}
-*/
-/* browse */
 
 /*ul.browse li {
 		float: left;
