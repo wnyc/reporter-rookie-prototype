@@ -1,20 +1,16 @@
 #user_description {
-  height: 264px;
+  height: 160px;
   background: #ddd;
   padding: 38px 0 0 0;
 }
 
 #user_description h4 {
-  font-size: 1.3em;
+  font-size: 1.7em;
   margin: 0;
 }
 
 #user_badges {
-  margin-top: 34px;
   float: left;
-  background: white;
-  border-radius: 30px;
-  padding: 15px;
 }
 
 #user_profile_pic {
@@ -22,10 +18,13 @@
   margin: 0 5% 0 5%;
 }
 
+#user_description p {
+		margin-top: 12px;
+}
 
 #user_profile_pic img {
-  width: 225px;
-  height: 225px;
+  width: 120px;
+  height: 120px;
 		border: 1px solid #bbb;
 }
 
