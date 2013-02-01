@@ -247,6 +247,39 @@ label {
 }
 
 
+/* JKDKWJNJKASBD */
+#assignment_submission h2{
+		font-size: 1.8em;
+		color: black;
+}
+
+#assignment_submission img {
+		width: 100%;
+}
+
+#assignment_submission p.user {
+		font-size: 0.8em;
+		color: #999;
+}
+
+#assignment_submission p.user .next {
+		color: #0ad5b1;
+		background: none;
+		cursor: pointer;
+}
+
+#assignment_submission p.user .next:hover {
+		text-decoration: underline;
+}
+
+#assignment_submission p.user .votes{
+		background: url('../images/heart.gif') 0 0 no-repeat;
+		width: 20px;
+		padding-left: 20px;
+		margin-left: 12px;
+		color: #ff3366;
+}
+
 /*assignment screen*/
 
 ul.assignments li {
@@ -341,8 +374,17 @@ ul.assignments li.raquo {
   margin: 0 5% 0 5%;
 }
 
+#user_profile .user {
+		display: none;
+}
+
+#user_profile h1 {
+		display: none;
+}
+
 #user_profile_pic img {
   width: 225px;
   height: 225px;
+		border: 1px solid #bbb;
 }
 
