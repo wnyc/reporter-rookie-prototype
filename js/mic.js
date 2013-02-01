@@ -10,6 +10,7 @@
   var $wave = $('#level2_doit .waveform');
   var $play = $('#play');
   var $mp3 = $('#recording');
+  var $goNext = $('#level2_doit .next.button');
   var height = 100;
   var interval;
   function activateRecord() {
@@ -35,12 +36,14 @@
       $wave.slideDown(function () {
         $play.addClass('active');
       });
+      $goNext.css('display', 'block');
     }
     else {
       $rec.addClass('active');
       activateRecord();
       $wave.slideUp();
       $play.removeClass('active');
+      $goNext.css('display', 'none');
       stop();
     }
   });
