@@ -287,3 +287,14 @@ label {
   margin-bottom: 1em;
 }
 
+#user_description {
+  background: #ddd;
+}
+
+#user_profile_pic img {
+  margin: 50px 0 0 ;
+  width: 225px;
+  height: 225px;
+}
+
+
